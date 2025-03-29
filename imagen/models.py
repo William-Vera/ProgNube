@@ -3,9 +3,8 @@ import uuid
 
 class Imagen(models.Model):
     # Definición de campos del modelo
-    id = models.UUIDField(
-        primary_key=True, 
-        default=uuid.uuid4, 
+    id = models.AutoField(
+        primary_key=True,
         editable=False
     )
     nombre = models.CharField(
